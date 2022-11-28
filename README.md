@@ -83,3 +83,9 @@ sudo dnf copr enable aflyhorse/libjpeg
 sudo dnf install libjpeg8 xrdb xset xdpyinfo
 betterlockscreen -u ~/Pictures/background.jpg
 ```
+
+## Polybar
+
+Edit ~/.config/polybar/config.ini
+`[bar/DP-2]` is the secondary bar
+`[bar/HDMI-0]` is the main bar
