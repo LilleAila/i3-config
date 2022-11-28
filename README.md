@@ -74,9 +74,9 @@ betterlockscreen -u ~/Pictures/background.jpg
 ## Dot-Files
 
 ```bash
-git clone # Whatever the link to github repo
+git clone https://github.com/LilleAila/i3-config.git # This repo
 mkdir -p ~/Pictures
-cd # Whatever the name of the repo is
+cd i3-config
 cp background.jpg ~/Pictures/
 cp config/* ~/.config/*
 ```
