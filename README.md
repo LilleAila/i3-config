@@ -57,6 +57,17 @@ chsh # Zsh path
 sudo chsh # Zsh path
 ```
 
+## Dot-Files
+
+```bash
+git clone https://github.com/LilleAila/i3-config.git # This repo
+mkdir -p ~/Pictures
+mkdir -p ~/.config
+cd i3-config
+cp background.jpg ~/Pictures/
+cp config/* ~/.config/*
+```
+
 ## Install betterlockscreen
 
 ```bash
@@ -71,14 +82,4 @@ sudo mv betterlockscreen /usr/local/bin
 sudo dnf copr enable aflyhorse/libjpeg
 sudo dnf install libjpeg8 xrdb xset xdpyinfo
 betterlockscreen -u ~/Pictures/background.jpg
-```
-
-## Dot-Files
-
-```bash
-git clone https://github.com/LilleAila/i3-config.git # This repo
-mkdir -p ~/Pictures
-cd i3-config
-cp background.jpg ~/Pictures/
-cp config/* ~/.config/*
 ```
