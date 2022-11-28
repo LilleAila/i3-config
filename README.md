@@ -37,12 +37,14 @@ sudo mv Nerd\ Fonts /usr/share/fonts
 
 rm FiraCode.zip
 rm Hack.zip
+
+fc-cache -fv
 ```
 
 ## Install `oh my zsh`
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Set default shell
