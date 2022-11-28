@@ -89,3 +89,4 @@ betterlockscreen -u ~/Pictures/background.jpg
 Edit ~/.config/polybar/config.ini
 `[bar/DP-2]` is the secondary bar
 `[bar/HDMI-0]` is the main bar
+Change `[bar/HDMI-0]` to `[bar/Virtual-1]` for virtual machines
