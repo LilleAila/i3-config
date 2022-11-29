@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install i3
-dnf -y install Xorg xinit i3-gaps
+sudo dnf -y install Xorg xinit i3-gaps
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 
 # Install RPM Fusion
