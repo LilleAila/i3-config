@@ -65,7 +65,7 @@ mkdir -p ~/Pictures
 mkdir -p ~/.config
 cd i3-config
 cp background.jpg ~/Pictures/
-cp config/* ~/.config/*
+cp -r config/* ~/.config
 ```
 
 ## Install betterlockscreen

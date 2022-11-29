@@ -34,16 +34,16 @@ mkdir -p ~/Pictures
 mkdir -p ~/.config
 # cd i3-config
 cp background.jpg ~/Pictures/
-cp config/* ~/.config/*
+cp -r config/* ~/.config
 
 # Betterlockscreen
 http -d https://github.com/Raymo111/i3lock-color/releases/latest/download/i3lock
 chmod +x i3lock
-mv i3lock /usr/local/bin
+sudo mv i3lock /usr/local/bin
 
 http -d -o betterlockscreen https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/next/betterlockscreen
 chmod +x betterlockscreen
-mv betterlockscreen /usr/local/bin
+sudo mv betterlockscreen /usr/local/bin
 
 sudo dnf -y copr enable aflyhorse/libjpeg
 sudo dnf -y install libjpeg8 xrdb xset xdpyinfo
