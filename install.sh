@@ -49,17 +49,5 @@ sudo dnf -y copr enable aflyhorse/libjpeg
 sudo dnf -y install libjpeg8 xrdb xset xdpyinfo
 betterlockscreen -u ~/Pictures/background.jpg
 
-# Info
-cat << EOF
-Polybar config:
-Edit ~/.config/polybar/config.ini
-[bar/DP-2] is the secondary bar
-[bar/HDMI-0] is the main bar
-Change [bar/HDMI-0] to [bar/Virtual-1] for virtual machines
-
-Displays:
-Save arandr config in ~/.screenlayout/displays.sh
-EOF
-
 # Install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

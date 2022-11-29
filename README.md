@@ -1,3 +1,17 @@
+Polybar config:
+Edit `~/.config/polybar/config.ini`
+
+`[bar/DP-2]` is the secondary bar
+`[bar/HDMI-0]` is the main bar
+Change `[bar/HDMI-0]` to `[bar/Virtual-1]` for virtual machines
+
+Run `ip a`
+Change `[module/wlan]` interface to wlp`x`s`x` and change `x` to output from `ip a`
+Change `[module/eth] interface` to enp`x`s`x` and change `x` to output from `ip a`
+
+Displays:
+Save arandr config in ~/.screenlayout/displays.sh
+
 ## Install `i3` and `Xorg`
 
 ```bash
