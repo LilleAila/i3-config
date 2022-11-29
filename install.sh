@@ -29,10 +29,10 @@ rm Hack.zip
 fc-cache -fv
 
 # Dotfiles
-git clone https://github.com/LilleAila/i3-config.git
+# git clone https://github.com/LilleAila/i3-config.git
 mkdir -p ~/Pictures
 mkdir -p ~/.config
-cd i3-config
+# cd i3-config
 cp background.jpg ~/Pictures/
 cp config/* ~/.config/*
 
