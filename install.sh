@@ -30,11 +30,11 @@ fc-cache -fv
 
 # Dotfiles
 # git clone https://github.com/LilleAila/i3-config.git
-mkdir -p ~/Pictures
-mkdir -p ~/.config
+mkdir -p $HOME/Pictures
+mkdir -p $HOME/.config
 # cd i3-config
-cp background.jpg ~/Pictures/
-cp config/* ~/.config/*
+cp background.jpg $HOME/Pictures/
+cp config/* $HOME/.config/*
 
 # Betterlockscreen
 http -d https://github.com/Raymo111/i3lock-color/releases/latest/download/i3lock
@@ -45,12 +45,9 @@ http -d -o betterlockscreen https://raw.githubusercontent.com/betterlockscreen/b
 chmod +x betterlockscreen
 mv betterlockscreen /usr/local/bin
 
-dnf copr enable aflyhorse/libjpeg
-dnf install libjpeg8 xrdb xset xdpyinfo
+dnf -y copr enable aflyhorse/libjpeg
+dnf -y install libjpeg8 xrdb xset xdpyinfo
 betterlockscreen -u ~/Pictures/background.jpg
-
-# Install oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Info
 cat << EOF
@@ -63,3 +60,6 @@ Change [bar/HDMI-0] to [bar/Virtual-1] for virtual machines
 Displays:
 Save arandr config in ~/.screenlayout/displays.sh
 EOF
+
+# Install oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
